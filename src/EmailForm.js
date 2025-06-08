@@ -36,7 +36,7 @@ function EmailForm() {
     };
 
     const res = await fetch(
-      `${process.env.REACT_APP_BACKEND_URL}/api/email/send-ccORbcc`,
+      `https://springmailsender-production.up.railway.app/api/email/send-ccORbcc`,
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
